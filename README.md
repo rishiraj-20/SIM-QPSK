@@ -187,3 +187,11 @@ Research Internship (May–June 2026)
 ## Acknowledgments
 
 This work was carried out under the supervision of Dr. Anshul Jaiswal, Department of Electronics & Communication Engineering, Indian Institute of Technology Roorkee.
+
+## Troubleshooting
+
+- Ensure that the transmitter and receiver use identical system parameters (carrier frequency, sampling rate, modulation depth, synchronization sequence, pilot length, etc.).
+- Verify successful reception using `Constellation_Visual_Testing.m` before running the comparative analysis scripts.
+- If a residual phase rotation is observed, increasing the pilot length may improve phase estimation.
+- If only part of the constellation is distorted, use `Unstable_Phase_Drift_Correction.m` to inspect phase stability across the received frame.
+- Poor frame synchronization or multiple large correlation peaks may indicate insufficient received signal quality or that a longer Zadoff-Chu synchronization sequence is required.
